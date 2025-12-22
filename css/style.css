@@ -118,15 +118,41 @@ header {
   display: flex !important;
 }
 
-nav ul li a {
+.navbar-collapse ul li a {
+  position: relative;
   font-family: Metropolis-semibold;
   font-size: 12px;
   line-height: 20px;
   letter-spacing: 2px;
   color: #010101;
+  text-decoration: none;
+  padding: 8px 0;
+  transition: color 0.3s ease;
+}
+
+/* underline */
+.navbar-collapse ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: #ED017F; /* brand color – change if needed */
+  transition: width 0.35s ease;
+}
+
+/* hover */
+.navbar-collapse ul li a:hover {
+  color: #ED017F;
+}
+
+.navbar-collapse ul li a:hover::after {
+  width: 100%;
 }
 
 .nav-btn .service {
+  position: relative;
   padding: 8px 20px;
   background-color: #ED017F;
   border-radius: 4px;
@@ -134,13 +160,28 @@ nav ul li a {
   font-size: 12px;
   line-height: 20px;
   letter-spacing: 2px;
-  color: white;
+  color: #fff;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: 
+    background-color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
 }
 
-.nav-btn img {
-  max-width: 24px;
-  width: 100%;
-  object-fit: contain;
+/* hover effect */
+.nav-btn .service:hover {
+  background-color: #c90068; /* darker brand shade */
+  box-shadow: 0 8px 20px rgba(237, 1, 127, 0.35);
+  transform: translateY(-2px);
+}
+
+/* active (click) */
+.nav-btn .service:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 10px rgba(237, 1, 127, 0.25);
 }
 
 .hero-section {
@@ -262,16 +303,36 @@ nav ul li a {
 }
 
 .primary-btn {
+  position: relative;
   padding: 13px 22px;
   background-color: #ED017F;
   border-radius: 5px;
   font-family: Metropolis-semibold;
   font-size: 12px;
-  color: white;
   line-height: 20px;
+  color: #fff;
+  text-decoration: none;
+  transition: 
+    background-color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+
+/* hover */
+.primary-btn:hover {
+  background-color: #c90068;
+  box-shadow: 0 10px 30px rgba(237, 1, 127, 0.35);
+  transform: translateY(-3px);
+}
+
+/* click */
+.primary-btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 15px rgba(237, 1, 127, 0.3);
 }
 
 .transparent-btn {
+  position: relative;
   padding: 12px 20px;
   border: 2px solid #ED017F;
   color: #ED017F;
@@ -279,6 +340,26 @@ nav ul li a {
   font-family: Metropolis-semibold;
   font-size: 12px;
   line-height: 20px;
+  text-decoration: none;
+  background-color: transparent;
+  transition: 
+    color 0.3s ease,
+    background-color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+
+/* hover */
+.transparent-btn:hover {
+  background-color: #ED017F;
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(237, 1, 127, 0.3);
+  transform: translateY(-2px);
+}
+
+/* click */
+.transparent-btn:active {
+  transform: translateY(0);
 }
 
 .hero-btn {
@@ -293,6 +374,32 @@ nav ul li a {
   gap: 16px;
   margin-top: 50px;
 }
+
+/* icon base */
+.socials a img {
+  width: 20px;
+  height: auto;
+  transition: 
+    transform 0.3s ease,
+    filter 0.3s ease,
+    opacity 0.3s ease;
+}
+
+/* hover effect */
+.socials a:hover img {
+  transform: translateY(-4px) scale(1.05);
+  filter: drop-shadow(0 6px 12px rgba(237, 1, 127, 0.35));
+  opacity: 0.9;
+}
+
+/* phone number */
+.socials p {
+  font-family: Metropolis-semibold;
+  font-size: 14px;
+  color: #010101;
+  margin: 0;
+}
+
 
 .cust-exp {
   padding-bottom: 72px;
@@ -424,23 +531,33 @@ nav ul li a {
 }
 
 .glance-btn {
-  display: flex;
-  align-items: center;
-  gap: 7.25px;
   margin-top: 45px;
 }
 
-.glance-btn a {
+.glance-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7.25px;
   font-family: Metropolis-Medium;
   color: #ED017F;
   font-size: 19.33px;
   line-height: 26.6px;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-.glance-btn>img {
-  max-width: 29px;
-  object-fit: contain;
-  width: 100%;
+.glance-link img {
+  width: 29px;
+  transition: transform 0.3s ease;
+}
+
+/* hover effect */
+.glance-link:hover {
+  color: #c7006a;
+}
+
+.glance-link:hover img {
+  transform: translateX(6px);
 }
 
 .our-services {
@@ -478,6 +595,43 @@ nav ul li a {
   gap: 22px;
   align-items: center;
   margin-top: 22px;
+  cursor: pointer;
+}
+
+/* heading */
+.service-text .cmn-ser-txt {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* underline */
+.service-text .cmn-ser-txt::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: #ED017F;
+  transition: width 0.3s ease;
+}
+
+/* arrow */
+.service-text a img {
+  transition: transform 0.3s ease;
+}
+
+/* hover effects */
+.service-text:hover .cmn-ser-txt {
+  color: #ED017F;
+}
+
+.service-text:hover .cmn-ser-txt::after {
+  width: 100%;
+}
+
+.service-text:hover a img {
+  transform: translateX(6px);
 }
 
 .cmn-ser-txt {
@@ -584,7 +738,26 @@ nav ul li a {
   line-height: 20px;
   letter-spacing: 2px;
   color: white;
+  cursor: pointer;
+  transition: 
+    background-color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.25s ease;
 }
+
+/* hover */
+.subscribe-button:hover {
+  background-color: #c7006a;
+  box-shadow: 0 10px 24px rgba(237, 1, 127, 0.35);
+  transform: translateY(-2px);
+}
+
+/* active (click) */
+.subscribe-button:active {
+  transform: translateY(0);
+  box-shadow: 0 6px 14px rgba(237, 1, 127, 0.25);
+}
+
 
 .subscribe {
   margin-top: 34px;
@@ -644,6 +817,60 @@ nav ul li a {
 
 .footer-sec>div>div.row {
   justify-content: space-between;
+}
+
+.col-20 ul li a {
+  position: relative;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.col-20 ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 1.5px;
+  background-color: #ED017F;
+  transition: width 0.3s ease;
+}
+
+.col-20 ul li a:hover {
+  color: #ED017F;
+}
+
+.col-20 ul li a:hover::after {
+  width: 100%;
+}
+
+/* footer social icons hover */
+.footer-sec .socials img {
+  cursor: pointer;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.footer-sec .socials img:hover {
+  transform: translateY(-3px);
+  filter: drop-shadow(0 6px 12px rgba(237, 1, 127, 0.35));
+}
+
+/* footer contact hover */
+.contact-icon {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.contact-icon span {
+  transition: color 0.3s ease;
+}
+
+.contact-icon:hover {
+  transform: translateX(4px);
+}
+
+.contact-icon:hover span {
+  color: #ED017F;
 }
 
 @media screen and (max-width : 768px) {

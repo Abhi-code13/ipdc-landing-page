@@ -1,417 +1,471 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IPDC</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IPDC</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
+  <body>
+    <header>
+      <nav>
+        <div class="container">
+          <div class="navbar">
+            <div class="nav-logo">
+              <a href=""><img src="./assets/images/logo.svg" alt="" /></a>
+            </div>
+            <div class="hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="navbar-collapse">
+              <ul>
+                <li><a href="">RETAIL</a></li>
+                <li><a href="">SME</a></li>
+                <li><a href="">CORPORATE</a></li>
+                <li><a href="">ABOUT US</a></li>
+                <li><a href="">COVID 19</a></li>
+                <li><a href="">CAMPAIGNS</a></li>
+              </ul>
 
-<body>
-  <header>
-    <nav>
+              <div class="nav-btn">
+                <a href=""
+                  ><img src="./assets/images/search-icon.svg" alt=""
+                /></a>
+                <a class="service" href="">iSERVICE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="hero-section">
       <div class="container">
-        <div class="navbar">
-          <div class="nav-logo">
-            <a href=""><img src="./assets/images/logo.svg" alt=""></a>
+        <div class="row">
+          <div class="col-50 sm-banner-img">
+            <div class="sm-bg" data-aos="zoom-in" data-aos-delay="200">
+              <img src="./assets/images/small-image.svg" alt="" />
+            </div>
           </div>
-          <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
+          <div class="col-50">
+            <div class="hero-content">
+              <h1 data-aos="fade-up">Chase Your Dream with us</h1>
+              <p data-aos="fade-up" data-aos-delay="150">
+                The harder you work for something, the greater you’ll feel when
+                you achieve it.
+              </p>
+              <div class="hero-btn" data-aos="fade-up" data-aos-delay="300">
+                <a class="primary-btn" href="">APPLY ONLINE </a>
+                <a class="transparent-btn" href="">LOAN CALCULATOR</a>
+              </div>
+              <div class="socials">
+                <a href=""><img src="./assets/images/phone-img.svg" /></a>
+                <p>16519</p>
+                <img src="./assets/images/verticle-line.svg" />
+                <a href=""><img src="./assets/images/facebook-img.svg" /></a>
+                <a href=""><img src="./assets/images/youtube-img.svg" /></a>
+                <a href=""><img src="./assets/images/linkedin-img.svg" /></a>
+                <a href=""><img src="./assets/images/instagram-img.svg" /></a>
+              </div>
+            </div>
           </div>
-          <div class="navbar-collapse">
-            <ul>
-              <li><a href="">RETAIL</a></li>
-              <li><a href="">SME</a></li>
-              <li><a href="">CORPORATE</a></li>
-              <li><a href="">ABOUT US</a></li>
-              <li><a href="">COVID 19</a></li>
-              <li><a href="">CAMPAIGNS</a></li>
-            </ul>
-
-            <div class="nav-btn">
-              <a href=""><img src="./assets/images/search-icon.svg" alt=""></a>
-              <a class="service" href="">iSERVICE</a>
+          <div class="col-50 lg-banner-img">
+            <div class="hero-img" data-aos="fade-left">
+              <div class="car-loans">
+                <a href=""><img src="./assets/images/car-img.svg" /></a>
+                <a href="">Car Loans</a>
+              </div>
+              <div class="home-loans">
+                <a href=""><img src="./assets/images/home-img.svg" /></a>
+                <a href="">Home Loan</a>
+              </div>
+              <div class="hero-wrpr"></div>
+              <img src="./assets/images/banner-bg.svg" alt="" />
             </div>
           </div>
         </div>
       </div>
-    </nav>
-  </header>
-
-  <section class="hero-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-50 sm-banner-img">
-          <div class="sm-bg">
-            <img src="./assets/images/small-image.svg" alt="" />
-          </div>
-        </div>
-        <div class="col-50">
-          <div class="hero-content">
-            <h1>Chase Your Dream with us </h1>
-            <p>
-              The harder you work for something, the greater you’ll feel when
-              you achieve it.
-            </p>
-            <div class="hero-btn">
-              <a class="primary-btn" href="">APPLY ONLINE </a>
-              <a class="transparent-btn" href="">LOAN CALCULATOR</a>
-            </div>
-            <div class="socials">
-              <a href=""><img src="./assets/images/phone-img.svg"></a>
-              <p>16519</p>
-              <img src="./assets/images/verticle-line.svg">
-              <a href=""><img src="./assets/images/facebook-img.svg"></a>
-              <a href=""><img src="./assets/images/youtube-img.svg"></a>
-              <a href=""><img src="./assets/images/linkedin-img.svg"></a>
-              <a href=""><img src="./assets/images/instagram-img.svg"></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-50 lg-banner-img">
-          <div class="hero-img">
-            <div class="car-loans">
-              <a href=""><img src="./assets/images/car-img.svg"></a>
-              <a href="">Car Loans</a>
-            </div>
-            <div class="home-loans">
-              <a href=""><img src="./assets/images/home-img.svg"></a>
-              <a href="">Home Loan</a>
-            </div>
-            <div class="hero-wrpr"></div>
-            <img src="./assets/images/banner-bg.svg" alt="" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="cust-exp">
-    <div class="container">
-      <div class="cust-top">
-        <h2 class="cmn-head">
-          Creating Extraordinary Customer Experience
-        </h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam bibendum eget morbi dignissim eu pharetra
-          consequat montes, sagittis.
-        </p>
-      </div>
-      <div class="row cust-cards">
-        <div class="col-25">
-          <div class="child-cust-exp">
-            <img src="./assets/images/cust-img-1.svg" alt="">
-            <h3 class="cmn-cust-head">Integrity</h3>
-            <p>Displaying the highest level of Integrity in the way we conduct our business</p>
-          </div>
-        </div>
-        <div class="col-25">
-          <div class="child-cust-exp">
-            <img src="./assets/images/cust-img-2.svg" alt="">
-            <h3 class="cmn-cust-head">Demonstrate</h3>
-            <p>Demonstrating a strong Will to Win in the market place</p>
-          </div>
-        </div>
-        <div class="col-25">
-          <div class="child-cust-exp">
-            <img src="./assets/images/cust-img-3.svg" alt="">
-            <h3 class="cmn-cust-head">Diversity</h3>
-            <p>Promoting Diversity in the work place and community</p>
-          </div>
-        </div>
-        <div class="col-25">
-          <div class="child-cust-exp">
-            <img src="./assets/images/cust-img-4.svg" alt="">
-            <h3 class="cmn-cust-head">Teamwork</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. A semper aenean id pen</p>
-          </div>
-        </div>
-        <div class="col-25">
-          <div class="child-cust-exp">
-            <img src="./assets/images/cust-img-1.svg" alt="">
-            <h3 class="cmn-cust-head">Collaboration</h3>
-            <p>Displaying the highest level of Integrity in the way we conduct our business</p>
-          </div>
-        </div>
-        <div class="col-25">
-          <div class="child-cust-exp">
-            <img src="./assets/images/cust-img-5.svg" alt="">
-            <h3 class="cmn-cust-head">Technology</h3>
-            <p>Harnessing the power of Technology to deliver better customer experience</p>
-          </div>
-        </div>
-        <div class="col-25">
-          <div class="child-cust-exp">
-            <img src="./assets/images/cust-img-6.svg" alt="">
-            <h3 class="cmn-cust-head">Corporate</h3>
-            <p>Setting the standard for the best Corporate Citizenship in the communities we work</p>
-          </div>
-        </div>
-        <div class="col-25">
-          <div class="child-cust-exp">
-            <img src="./assets/images/cust-img-7.svg" alt="">
-            <h3 class="cmn-cust-head">Digital</h3>
-            <p>Setting the standard for the best Corporate Citizenship in the communities we work</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="partners">
-    <div class="container">
-      <div class="part-top">
-        <h2>BUSINESS PARTNERS</h2>
-      </div>
-      <div class="part-scroll">
-        <div class="scroll">
-          <div class="partner">
-            <img src="./assets/images/partner-1.svg" alt="">
-          </div>
-          <div class="partner">
-            <img src="./assets/images/partner-2.svg" alt="">
-          </div>
-          <div class="partner">
-            <img src="./assets/images/partner-3.svg" alt="">
-          </div>
-          <div class="partner">
-            <img src="./assets/images/partner-4.svg" alt="">
-          </div>
-
-          <div class="partner">
-            <img src="./assets/images/partner-1.svg" alt="">
-          </div>
-          <div class="partner">
-            <img src="./assets/images/partner-2.svg" alt="">
-          </div>
-          <div class="partner">
-            <img src="./assets/images/partner-3.svg" alt="">
-          </div>
-          <div class="partner">
-            <img src="./assets/images/partner-4.svg" alt="">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="glance">
-    <div class="container">
-      <div class="row">
-        <div class="col-50">
-          <div class="glance-image">
-            <img src="./assets/images/glance-pic.svg" alt="">
-          </div>
-        </div>
-
-        <div class="col-50">
-          <div class="glance-content">
-            <h2 class="cmn-head">IPDC AT A GLANCE</h2>
-            <p>IPDC Finance Limited (previously known as "Industrial Promotion and Development Company of Bangladesh
-              Limited") is the first private sector financial institution of the country established in 1981 by a
-              distinguished group of shareholders namely International Finance Corporation (IFC), USA, German Investment
-              and Development Company (DEG), Germany, The Aga Khan Fund for Economic Development (AKFED), Switzerland,
-              Commonwealth Development Corporation (CDC), UK and the Government of Bangladesh</p>
-            <div class="glance-btn">
-              <a href="">Read More</a>
-              <a href=""><img src="./assets/images/right arrow.svg"></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="our-services">
-    <div class="container">
-      <div class="services-top">
-        <h2 class="cmn-head">Our Services</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam, dapibus mattis vel feugiat erat tortor
-          eleifend.</p>
-      </div>
-      <div class="row">
-        <div class="col-25">
-          <div class="child-services">
-            <div class="services-img">
-              <img src="./assets/images/service-1.svg" alt="">
-            </div>
-            <div class="service-text">
-              <h3 class="cmn-ser-txt">IPDC SAVING SCHEMES</h3>
-              <a href=""><img src="./assets/images/Arrow-Circle-Right.svg"></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-25">
-          <div class="child-services">
-            <div class="services-img">
-              <img src="./assets/images/service-2.svg" alt="">
-            </div>
-            <div class="service-text">
-              <h3 class="cmn-ser-txt">IPDC PERSONAL LOAN</h3>
-              <a href=""><img src="./assets/images/Arrow-Circle-Right.svg"></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-25">
-          <div class="child-services">
-            <div class="services-img">
-              <img src="./assets/images/service-3.svg" alt="">
-            </div>
-            <div class="service-text">
-              <h3 class="cmn-ser-txt">IPDC DEPOSIT SCHEMES</h3>
-              <a href=""><img src="./assets/images/Arrow-Circle-Right.svg"></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-25">
-          <div class="child-services">
-            <div class="services-img">
-              <img src="./assets/images/service-4.svg" alt="">
-            </div>
-            <div class="service-text">
-              <h3 class="cmn-ser-txt">IPDC AUTO LOAN</h3>
-              <a href=""><img src="./assets/images/Arrow-Circle-Right.svg"></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="result">
-    <div class="container">
-      <div class="result-top">
-        <h2 class="cmn-head">Our best results for the year</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam, dapibus mattis vel feugiat erat tortor
-          eleifend.</p>
-      </div>
-      <div class="row">
-        <div class="col-25">
-          <div class="child-results">
-            <h3 class="cmn-res-txt">57.6 bn</h3>
-            <p>LOAN PORTFOLIO</p>
-          </div>
-        </div>
-        <div class="col-25">
-          <div class="child-results">
-            <h3 class="cmn-res-txt">0.95%</h3>
-            <p>CLASSIFIED LOAN PORTFOLIO</p>
-          </div>
-        </div>
-        <div class="col-25">
-          <div class="child-results">
-            <h3 class="cmn-res-txt">388.5%</h3>
-            <p>CLASSIFIED LOAN COVERAGE</p>
-          </div>
-        </div>
-        <div class="col-25">
-          <div class="child-results">
-            <h3 class="cmn-res-txt">50.4 bn</h3>
-            <p>DEPOSIT</p>
-          </div>
-        </div>
-        <div class="col-25">
-          <div class="child-results">
-            <h3 class="cmn-res-txt">6.1 bn</h3>
-            <p>SHAREHOLDERS EQUITY</p>
-          </div>
-        </div>
-        <div class="col-25">
-          <div class="child-results">
-            <h3 class="cmn-res-txt">18.51%</h3>
-            <p>CAPITAL AQUIDACY RATIO</p>
-          </div>
-        </div>
-        <div class="col-25">
-          <div class="child-results">
-            <h3 class="cmn-res-txt">8.5 bn</h3>
-            <p>MARKET CAPTALIZATION</p>
-          </div>
-        </div>
-        <div class="col-25">
-          <div class="child-results">
-            <h3 class="cmn-res-txt">AAA</h3>
-            <p>CREDIT RATING</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="newsletter">
-    <div class="container">
-      <div class="news-content">
-        <h2 class="cmn-head">Newsletter</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget ac quis aliquam arcu lacus.</p>
-        <div class="subscribe">
-          <div class="subscribe-container">
-            <input type="email" placeholder="Your email" class="subscribe-input" />
-            <button class="subscribe-button">SUBSCRIBE</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer class="footer-sec">
-    <div class="container">
-      <div class="row">
-        <div class="col-20">
-          <div>About The Company</div>
+    </section>
+    <section class="cust-exp">
+      <div class="container">
+        <div class="cust-top">
+          <h2 class="cmn-head">Creating Extraordinary Customer Experience</h2>
           <p>
-            Learn To Love Growth And Change And You Will Be A Success.
-            Microsoft Patch
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+            bibendum eget morbi dignissim eu pharetra consequat montes,
+            sagittis.
           </p>
-          <div class="socials">
-            <img src="./assets/images/facebook-img.svg" alt="Facebook" />
-            <img src="./assets/images/instagram-img.svg" alt="Instagram" />
-            <img src="./assets/images/linkedin-img.svg" alt="LinkedIn" />
-            <img src="./assets/images/youtube-img.svg" alt="YouTube" />
+        </div>
+        <div class="row cust-cards">
+          <div class="col-25">
+            <div class="child-cust-exp" data-aos="fade-up" data-aos-delay="100">
+              <img src="./assets/images/cust-img-1.svg" alt="" />
+              <h3 class="cmn-cust-head">Integrity</h3>
+              <p>
+                Displaying the highest level of Integrity in the way we conduct
+                our business
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="col-20">
-          <div>Products</div>
-          <ul>
-            <li><a href="#">CSR Activities</a></li>
-            <li><a href="#">Green Banking</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Ongoing Campaign</a></li>
-            <li><a href="#">Updates</a></li>
-          </ul>
-        </div>
-        <div class="col-20">
-          <div>Get Started</div>
-          <ul>
-            <li><a href="#">Career</a></li>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Government Securities</a></li>
-            <li><a href="#">Examples</a></li>
-            <li><a href="#">NIS</a></li>
-          </ul>
-        </div>
-        <div class="col-20">
-          <div>About</div>
-          <ul>
-            <li><a href="#">IPDC at a Glance</a></li>
-            <li><a href="#">Mission, Vision & Values</a></li>
-            <li><a href="#">Corporate Governance</a></li>
-            <li><a href="#">Shareholders</a></li>
-            <li><a href="#">Investor Relations</a></li>
-          </ul>
-        </div>
-        <div class="col-20">
-          <div class="contact-icon">
-            <img src="./assets/images/phone-img.svg" alt="Call Icon" />
-            <span>16519</span>
+          <div class="col-25">
+            <div class="child-cust-exp" data-aos="fade-up" data-aos-delay="200">
+              <img src="./assets/images/cust-img-2.svg" alt="" />
+              <h3 class="cmn-cust-head">Demonstrate</h3>
+              <p>Demonstrating a strong Will to Win in the market place</p>
+            </div>
+          </div>
+          <div class="col-25">
+            <div class="child-cust-exp" data-aos="fade-up" data-aos-delay="300">
+              <img src="./assets/images/cust-img-3.svg" alt="" />
+              <h3 class="cmn-cust-head">Diversity</h3>
+              <p>Promoting Diversity in the work place and community</p>
+            </div>
+          </div>
+          <div class="col-25">
+            <div class="child-cust-exp" data-aos="fade-up" data-aos-delay="400">
+              <img src="./assets/images/cust-img-4.svg" alt="" />
+              <h3 class="cmn-cust-head">Teamwork</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. A
+                semper aenean id pen
+              </p>
+            </div>
+          </div>
+          <div class="col-25">
+            <div class="child-cust-exp" data-aos="fade-up" data-aos-delay="500">
+              <img src="./assets/images/cust-img-1.svg" alt="" />
+              <h3 class="cmn-cust-head">Collaboration</h3>
+              <p>
+                Displaying the highest level of Integrity in the way we conduct
+                our business
+              </p>
+            </div>
+          </div>
+          <div class="col-25">
+            <div class="child-cust-exp" data-aos="fade-up" data-aos-delay="600">
+              <img src="./assets/images/cust-img-5.svg" alt="" />
+              <h3 class="cmn-cust-head">Technology</h3>
+              <p>
+                Harnessing the power of Technology to deliver better customer
+                experience
+              </p>
+            </div>
+          </div>
+          <div class="col-25">
+            <div class="child-cust-exp" data-aos="fade-up" data-aos-delay="700">
+              <img src="./assets/images/cust-img-6.svg" alt="" />
+              <h3 class="cmn-cust-head">Corporate</h3>
+              <p>
+                Setting the standard for the best Corporate Citizenship in the
+                communities we work
+              </p>
+            </div>
+          </div>
+          <div class="col-25" data-aos="fade-up" data-aos-delay="800">
+            <div class="child-cust-exp">
+              <img src="./assets/images/cust-img-7.svg" alt="" />
+              <h3 class="cmn-cust-head">Digital</h3>
+              <p>
+                Setting the standard for the best Corporate Citizenship in the
+                communities we work
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </section>
 
-  <script src="./js/app.js"></script>
-</body>
+    <section class="partners">
+      <div class="container">
+        <div class="part-top" data-aos="fade-up">
+          <h2>BUSINESS PARTNERS</h2>
+        </div>
+        <div class="part-scroll" data-aos="zoom-in">
+          <div class="scroll">
+            <div class="partner">
+              <img src="./assets/images/partner-1.svg" alt="" />
+            </div>
+            <div class="partner">
+              <img src="./assets/images/partner-2.svg" alt="" />
+            </div>
+            <div class="partner">
+              <img src="./assets/images/partner-3.svg" alt="" />
+            </div>
+            <div class="partner">
+              <img src="./assets/images/partner-4.svg" alt="" />
+            </div>
 
+            <div class="partner">
+              <img src="./assets/images/partner-1.svg" alt="" />
+            </div>
+            <div class="partner">
+              <img src="./assets/images/partner-2.svg" alt="" />
+            </div>
+            <div class="partner">
+              <img src="./assets/images/partner-3.svg" alt="" />
+            </div>
+            <div class="partner">
+              <img src="./assets/images/partner-4.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="glance">
+      <div class="container">
+        <div class="row">
+          <div class="col-50">
+            <div class="glance-image" data-aos="fade-right">
+              <img src="./assets/images/glance-pic.svg" alt="" />
+            </div>
+          </div>
+
+          <div class="col-50">
+            <div class="glance-content" data-aos="fade-left">
+              <h2 class="cmn-head">IPDC AT A GLANCE</h2>
+              <p>
+                IPDC Finance Limited (previously known as "Industrial Promotion
+                and Development Company of Bangladesh Limited") is the first
+                private sector financial institution of the country established
+                in 1981 by a distinguished group of shareholders namely
+                International Finance Corporation (IFC), USA, German Investment
+                and Development Company (DEG), Germany, The Aga Khan Fund for
+                Economic Development (AKFED), Switzerland, Commonwealth
+                Development Corporation (CDC), UK and the Government of
+                Bangladesh
+              </p>
+              <div class="glance-btn">
+                <a href="" class="glance-link">
+                  Read More
+                  <img src="./assets/images/right arrow.svg" alt="arrow" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="our-services">
+      <div class="container">
+        <div class="services-top">
+          <h2 class="cmn-head">Our Services</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam,
+            dapibus mattis vel feugiat erat tortor eleifend.
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <div class="child-services" data-aos="flip-left">
+              <div class="services-img">
+                <img src="./assets/images/service-1.svg" alt="" />
+              </div>
+              <div class="service-text">
+                <h3 class="cmn-ser-txt">IPDC SAVING SCHEMES</h3>
+                <a href=""
+                  ><img src="./assets/images/Arrow-Circle-Right.svg"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-25">
+            <div class="child-services" data-aos="flip-left">
+              <div class="services-img">
+                <img src="./assets/images/service-2.svg" alt="" />
+              </div>
+              <div class="service-text">
+                <h3 class="cmn-ser-txt">IPDC PERSONAL LOAN</h3>
+                <a href=""
+                  ><img src="./assets/images/Arrow-Circle-Right.svg"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-25">
+            <div class="child-services" data-aos="flip-left">
+              <div class="services-img">
+                <img src="./assets/images/service-3.svg" alt="" />
+              </div>
+              <div class="service-text">
+                <h3 class="cmn-ser-txt">IPDC DEPOSIT SCHEMES</h3>
+                <a href=""
+                  ><img src="./assets/images/Arrow-Circle-Right.svg"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-25">
+            <div class="child-services" data-aos="flip-left">
+              <div class="services-img">
+                <img src="./assets/images/service-4.svg" alt="" />
+              </div>
+              <div class="service-text">
+                <h3 class="cmn-ser-txt">IPDC AUTO LOAN</h3>
+                <a href=""
+                  ><img src="./assets/images/Arrow-Circle-Right.svg"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="result">
+      <div class="container">
+        <div class="result-top">
+          <h2 class="cmn-head">Our best results for the year</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam,
+            dapibus mattis vel feugiat erat tortor eleifend.
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <div class="child-results" data-aos="zoom-in">
+              <h3 class="cmn-res-txt">57.6 bn</h3>
+              <p>LOAN PORTFOLIO</p>
+            </div>
+          </div>
+          <div class="col-25">
+            <div class="child-results" data-aos="zoom-in">
+              <h3 class="cmn-res-txt">0.95%</h3>
+              <p>CLASSIFIED LOAN PORTFOLIO</p>
+            </div>
+          </div>
+          <div class="col-25">
+            <div class="child-results" data-aos="zoom-in">
+              <h3 class="cmn-res-txt">388.5%</h3>
+              <p>CLASSIFIED LOAN COVERAGE</p>
+            </div>
+          </div>
+          <div class="col-25">
+            <div class="child-results" data-aos="zoom-in">
+              <h3 class="cmn-res-txt">50.4 bn</h3>
+              <p>DEPOSIT</p>
+            </div>
+          </div>
+          <div class="col-25">
+            <div class="child-results" data-aos="zoom-in">
+              <h3 class="cmn-res-txt">6.1 bn</h3>
+              <p>SHAREHOLDERS EQUITY</p>
+            </div>
+          </div>
+          <div class="col-25">
+            <div class="child-results" data-aos="zoom-in">
+              <h3 class="cmn-res-txt">18.51%</h3>
+              <p>CAPITAL AQUIDACY RATIO</p>
+            </div>
+          </div>
+          <div class="col-25">
+            <div class="child-results" data-aos="zoom-in">
+              <h3 class="cmn-res-txt">8.5 bn</h3>
+              <p>MARKET CAPTALIZATION</p>
+            </div>
+          </div>
+          <div class="col-25">
+            <div class="child-results" data-aos="zoom-in">
+              <h3 class="cmn-res-txt">AAA</h3>
+              <p>CREDIT RATING</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter" data-aos="fade-up">
+      <div class="container">
+        <div class="news-content">
+          <h2 class="cmn-head">Newsletter</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget ac
+            quis aliquam arcu lacus.
+          </p>
+          <div class="subscribe">
+            <div class="subscribe-container">
+              <input
+                type="email"
+                placeholder="Your email"
+                class="subscribe-input"
+              />
+              <button class="subscribe-button">SUBSCRIBE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-sec" data-aos="fade-up">
+      <div class="container">
+        <div class="row">
+          <div class="col-20">
+            <div>About The Company</div>
+            <p>
+              Learn To Love Growth And Change And You Will Be A Success.
+              Microsoft Patch
+            </p>
+            <div class="socials">
+              <img src="./assets/images/facebook-img.svg" alt="Facebook" />
+              <img src="./assets/images/instagram-img.svg" alt="Instagram" />
+              <img src="./assets/images/linkedin-img.svg" alt="LinkedIn" />
+              <img src="./assets/images/youtube-img.svg" alt="YouTube" />
+            </div>
+          </div>
+          <div class="col-20">
+            <div>Products</div>
+            <ul>
+              <li><a href="#">CSR Activities</a></li>
+              <li><a href="#">Green Banking</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Ongoing Campaign</a></li>
+              <li><a href="#">Updates</a></li>
+            </ul>
+          </div>
+          <div class="col-20">
+            <div>Get Started</div>
+            <ul>
+              <li><a href="#">Career</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Government Securities</a></li>
+              <li><a href="#">Examples</a></li>
+              <li><a href="#">NIS</a></li>
+            </ul>
+          </div>
+          <div class="col-20">
+            <div>About</div>
+            <ul>
+              <li><a href="#">IPDC at a Glance</a></li>
+              <li><a href="#">Mission, Vision & Values</a></li>
+              <li><a href="#">Corporate Governance</a></li>
+              <li><a href="#">Shareholders</a></li>
+              <li><a href="#">Investor Relations</a></li>
+            </ul>
+          </div>
+          <div class="col-20">
+            <div class="contact-icon">
+              <img src="./assets/images/phone-img.svg" alt="Call Icon" />
+              <span>16519</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        easing: "ease-in-out",
+        once: true,
+        offset: 120,
+      });
+    </script>
+  </body>
 </html>
